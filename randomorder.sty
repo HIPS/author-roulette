@@ -15,7 +15,6 @@
 
 % Reverse order depending on result of hash.
 \newcommand*{\randomorder}[3]{\ifthenelse{\equal{\randomorderhash{\randomorder@seed}}{\randomorderhash{\randomorder@defaultseed}}}{#1#2#3}{#3#2#1}}
-
 % Explanatory text to include in the paper.
 \newcommand*{\explanationtext}{\ifthenelse{\equal{\randomorder@seed}{\randomorder@defaultseed}}%
 {Author order randomization in progress. See \mbox{\url{github.com/hips/author-roulette}}}%
